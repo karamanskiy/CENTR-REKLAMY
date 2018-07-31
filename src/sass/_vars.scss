@@ -1,0 +1,28 @@
+@import "bourbon";
+
+//color
+$main-color: #000;
+$pink-color: rgba(#ec008b, .4);
+$blue-color: rgba(#00adef, .45);
+$yellow-color: rgba(#fff100, .45);
+
+
+@mixin btn-gradient() {
+	
+}
+
+//font
+$din: "DINPro-Regular", sans-serif;
+$din-medium: "DINPro-Medium", sans-serif;
+$proxima: "ProximaNova-Regular", sans-serif;
+$proxima-light: "ProximaNova-Light", sans-serif;
+$proxima-bold: "ProximaNova-Bold", sans-serif;
+$proxima-semi: "ProximaNova-Semibold", sans-serif;
+
+
+
+//viewport size
+$desktop: "1200px";
+$tablet: "992px";
+$phone: "768px";
+$extra-small: "480px";

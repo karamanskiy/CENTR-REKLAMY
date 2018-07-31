@@ -1,0 +1,10 @@
+@import "bourbon";
+
+@include font-face("DINPro-Medium", "../fonts/DINPro-Medium", $file-formats: eot woff woff2 ttf);
+@include font-face("DINPro-Regular", "../fonts/DINPro-Regular", $file-formats: eot woff woff2 ttf);
+@include font-face("ProximaNova-Bold", "../fonts/ProximaNova-Bold", $file-formats: eot woff woff2 ttf);
+@include font-face("ProximaNova-Light", "../fonts/ProximaNova-Light", $file-formats: eot woff woff2 ttf);
+@include font-face("ProximaNova-Regular", "../fonts/ProximaNova-Regular", $file-formats: eot woff woff2 ttf);
+@include font-face("ProximaNova-Semibold", "../fonts/ProximaNova-Semibold", $file-formats: eot woff woff2 ttf);
+
+// @import "../libs/font-awesome/scss/font-awesome";
