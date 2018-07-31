@@ -5,7 +5,7 @@ $(function(){
 
 	var handler = function() {
 		var $header = $('.header'),
-			inWidth = $(window).width();
+		inWidth = $(window).width();
 		if(inWidth > 690 && $header.length){
 			$(window).on('scroll', fixedHeader);
 		} else {
@@ -45,9 +45,6 @@ $(function(){
 			$('body,html').animate({scrollTop: top}, 1000);
 		});
 
-		//wow animate initial
-		// new WOW().init();
-
 
 		//AJAX email send
 		$('form').submit(function(event) {
@@ -62,7 +59,7 @@ $(function(){
 				type			: 'post',
 				success		: function(){
 					$('#'+ id +' input, #'+ id + ' textarea').val('');
-					$(".success").fadeIn().delay(3000).fadeOut();
+					alert('Письмо успешно отправлено!');
 				},
 				error			: function(){
 					alert('Ошибка отправки формы :(');
@@ -113,28 +110,11 @@ $(function(){
 		arrows: true
 	});
 
-	// $('.reviews__slider').slick({
-	// 	speed: 500,
-	// 	centerMode: true,
-	// 	slidesToShow: 3,
-	// 	centerPadding: 0,
-	// 	// variableWidth: true,
-	// 	infinite: false
-	// });
-	// $('.reviews__slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-	// 	// $('.reviews__slider-item').removeClass('prev-slide');
-	// 	// $('.reviews__slider-item').removeClass('next-slide');
-	// 	// $(this).find('.slick-current').prev().addClass('prev-slide');
-	// 	// $(this).find('.slick-current').next().addClass('next-slide');
-	// 	console.log(currentSlide);
-	// 	$('.slick-current').removeClass('slick-current');
-	// 	$('.reviews__slider .reviews__slider-item').eq(currentSlide + 1).addClass('slick-current')
-	// });
 
 	var maxSlides,
-		activeSlideInd,
-		slideWidth,
-		width = $(window).width();
+	activeSlideInd,
+	slideWidth,
+	width = $(window).width();
 
 	if (width < 900) {
 		maxSlides = 1;
@@ -220,6 +200,25 @@ $(function(){
 		$(this).toggleClass('active');
 		$('.header__menu').toggleClass('active');
 	});
+
+	// SCROLL TOP BTN
+	$('.scroll-top').click(function() {
+		$('html, body').animate({
+			scrollTop: $('body').offset().top
+		}, 1000);
+		return false;
+	});
+
+	if($('.scroll-top').length){
+		$(window).scroll(function() {
+			var scr_top = $(window).scrollTop();
+			if (scr_top > 900) {
+				$('.scroll-top').addClass('active');
+			} else{
+				$('.scroll-top').removeClass('active');
+			}
+		});
+	}
 
 
 

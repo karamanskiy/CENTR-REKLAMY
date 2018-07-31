@@ -6,6 +6,29 @@
 body.padding-menu {padding-top: 97px;}
 #header-for-scroll {position: absolute;top: 0;}
 
+.scroll-top {
+	background-image: url(../img/arr-right.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 37px;
+	position: fixed;
+	bottom: 10px;
+	right: 30px;
+	transform: rotate(-90deg);
+	cursor: pointer;
+	transition: all .3s;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s;
+	&:hover {opacity: .7;}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
 .header {
 	background-color: #fff;
 	height: 97px;
