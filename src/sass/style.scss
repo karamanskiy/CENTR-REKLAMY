@@ -96,14 +96,14 @@ body.padding-menu {padding-top: 97px;}
 		}
 	}
 	&__cont {
-		margin-top: 15px;
+		margin-top: 2px;
 		min-width: 135px;
 	}
 	&__cont-tel {
-		font-size: 15px;
+		font-size: 18px;
 		font-family: $proxima-semi;
 		display: block;
-		margin-bottom: 5px;
+		margin-bottom: 2px;
 	}
 	&__callback-btn {
 		text-decoration: underline;
@@ -112,7 +112,7 @@ body.padding-menu {padding-top: 97px;}
 	&__callback-btn,
 	&__cont-mail {
 		text-transform: lowercase;
-		font-size: 11px;
+		font-size: 15px;
 		font-family: $proxima-semi;
 		cursor: pointer;
 		line-height: 1;
@@ -883,11 +883,16 @@ body.padding-menu {padding-top: 97px;}
 	background-size: contain;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	transition: all .5s;
-	&:hover {transform: rotateY(180deg);}
+	transition: all .3s;
+	&:hover {opacity: .7;}
 }
 
-
+.success__wrap {
+	padding: 50px;
+	border: 2px solid #000;
+	background-color: #fff;
+	text-align: center;
+}
 
 
 

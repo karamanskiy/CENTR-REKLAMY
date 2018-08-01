@@ -504,7 +504,7 @@
 					<form class="contacts__form">
 						<input type="text" name="name1" placeholder="ИМЯ">
 						<input type="text" name="name2" placeholder="ФАМИЛИЯ">
-						<input type="tel" name="tel" placeholder="ТЕЛЕФОН">
+						<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required>
 						<!-- ----- --> <br>
 						<input type="text" name="theme_letter" placeholder="ТЕМА ПИСЬМА">
 						<input type="text" name="mess" placeholder="СООБЩЕНИЕ">
@@ -546,7 +546,7 @@
 				<form class="contacts__form">
 					<input type="text" name="name1" placeholder="ИМЯ">
 					<input type="text" name="name2" placeholder="ФАМИЛИЯ">
-					<input type="tel" name="tel" placeholder="ТЕЛЕФОН">
+					<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required>
 					<!-- ----- --> <br>
 					<input type="text" name="theme_letter" placeholder="ТЕМА ПИСЬМА">
 					<input type="text" name="mess" placeholder="СООБЩЕНИЕ">
@@ -556,6 +556,15 @@
 					</div>
 					<button type="submit">Отправить</button>
 				</form>
+			</div>
+		</div>
+
+		<div id="success-modal">
+			<div class="main-form">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<div class="success__wrap">
+					<p>Сообщение успешно отправлено!</p>
+				</div>
 			</div>
 		</div>
 	</div>

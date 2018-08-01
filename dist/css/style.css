@@ -101,20 +101,20 @@ body.padding-menu {
       .header__menu-item a:hover {
         color: #999; }
   .header__cont {
-    margin-top: 15px;
+    margin-top: 2px;
     min-width: 135px; }
   .header__cont-tel {
-    font-size: 15px;
+    font-size: 18px;
     font-family: "ProximaNova-Semibold", sans-serif;
     display: block;
-    margin-bottom: 5px; }
+    margin-bottom: 2px; }
   .header__callback-btn {
     text-decoration: underline; }
     .header__callback-btn:hover {
       text-decoration: none; }
   .header__callback-btn, .header__cont-mail {
     text-transform: lowercase;
-    font-size: 11px;
+    font-size: 15px;
     font-family: "ProximaNova-Semibold", sans-serif;
     cursor: pointer;
     line-height: 1; }
@@ -917,11 +917,16 @@ body.padding-menu {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  -webkit-transition: all .5s;
-  transition: all .5s; }
+  -webkit-transition: all .3s;
+  transition: all .3s; }
   .arcticmodal-close:hover {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg); }
+    opacity: .7; }
+
+.success__wrap {
+  padding: 50px;
+  border: 2px solid #000;
+  background-color: #fff;
+  text-align: center; }
 
 @media screen and (max-width: 900px) {
   .container {
@@ -1023,8 +1028,9 @@ body.padding-menu {
     -webkit-box-shadow: 0 0 30px -3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 30px -3px rgba(0, 0, 0, 0.1); }
   .header__logo {
-    min-width: 200px;
-    max-width: 210px; }
+    min-width: 170px;
+    max-width: 170px;
+    margin-top: 3px; }
   .big_logo {
     margin-top: 3px; }
   .header__cont {

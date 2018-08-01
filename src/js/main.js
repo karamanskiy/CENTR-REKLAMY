@@ -58,8 +58,9 @@ $(function(){
 				data			: data,
 				type			: 'post',
 				success		: function(){
-					$('#'+ id +' input, #'+ id + ' textarea').val('');
-					alert('Письмо успешно отправлено!');
+					$.arcticmodal('close');
+					$('.contacts__form input').val('');
+					$('#success-modal').arcticmodal();
 				},
 				error			: function(){
 					alert('Ошибка отправки формы :(');

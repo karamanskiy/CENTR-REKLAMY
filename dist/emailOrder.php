@@ -2,25 +2,29 @@
 
 if (!empty($_POST)) {
 
-	$name = htmlspecialchars($_POST['name']);
+	$name1 = htmlspecialchars($_POST['name1']);
+	$name2 = htmlspecialchars($_POST['name2']);
 	$tel = htmlspecialchars($_POST['tel']);
-	$mes = htmlspecialchars($_POST['mess']);
-	$type = htmlspecialchars($_POST['type']);
+	$theme_letter = htmlspecialchars($_POST['theme_letter']);
+	$mess = htmlspecialchars($_POST['mess']);
+	$data_obrab = htmlspecialchars($_POST['data_obrab']);
 
 
-	$subject = 'Новая заявка с сайта - LiderTrans';
+	$subject = 'Новая заявка с сайта - Центр Рекламы';
 
 	/* сообщение */
 	$message = '
 	<html>
 	<head>
-	<title>Новая заявка с сайта - LiderTrans</title>
+	<title>Новая заявка с сайта - Центр Рекламы</title>
 	</head>
 	<body>' .
-	(!empty($name) ? '<p><b>Имя:</b> ' . $name . '</p>' : '') .
+	(!empty($name1) ? '<p><b>Имя:</b> ' . $name1 . '</p>' : '') .
+	(!empty($name2) ? '<p><b>Фамилия:</b> ' . $name2 . '</p>' : '') .
 	(!empty($tel) ? '<p><b>Телефон:</b> ' . $tel . '</p>' : '') .
-	(!empty($type) ? '<p><b>Тип услуги:</b> ' . $type . '</p>' : '') .
-	(!empty($mes) ? '<p><b>Сообщение:</b> ' . $mes . '</p>' : '') .
+	(!empty($theme_letter) ? '<p><b>Тема письма:</b> ' . $theme_letter . '</p>' : '') .
+	(!empty($mess) ? '<p><b>Сообщение:</b> ' . $mess . '</p>' : '') .
+	(!empty($data_obrab) ? '<p><b>Согласие на обработку:</b> ' . $data_obrab . '</p>' : '') .
 	'<br/></body>
 	</html>
 	';
