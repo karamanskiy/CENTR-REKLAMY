@@ -2,11 +2,9 @@
 
 if (!empty($_POST)) {
 
-	$name1 = htmlspecialchars($_POST['name1']);
-	$name2 = htmlspecialchars($_POST['name2']);
+	$name = htmlspecialchars($_POST['name']);
 	$tel = htmlspecialchars($_POST['tel']);
-	$theme_letter = htmlspecialchars($_POST['theme_letter']);
-	$mess = htmlspecialchars($_POST['mess']);
+	$time = htmlspecialchars($_POST['time']);
 	$data_obrab = htmlspecialchars($_POST['data_obrab']);
 
 
@@ -19,20 +17,19 @@ if (!empty($_POST)) {
 	<title>Новая заявка с сайта - Центр Рекламы</title>
 	</head>
 	<body>' .
-	(!empty($name1) ? '<p><b>Имя:</b> ' . $name1 . '</p>' : '') .
-	(!empty($name2) ? '<p><b>Фамилия:</b> ' . $name2 . '</p>' : '') .
+	(!empty($name) ? '<p><b>Имя:</b> ' . $name . '</p>' : '') .
 	(!empty($tel) ? '<p><b>Телефон:</b> ' . $tel . '</p>' : '') .
-	(!empty($theme_letter) ? '<p><b>Тема письма:</b> ' . $theme_letter . '</p>' : '') .
-	(!empty($mess) ? '<p><b>Сообщение:</b> ' . $mess . '</p>' : '') .
+	(!empty($time) ? '<p><b>Удобное время звонка:</b> ' . $time . '</p>' : '') .
 	(!empty($data_obrab) ? '<p><b>Согласие на обработку:</b> ' . $data_obrab . '</p>' : '') .
 	'<br/></body>
 	</html>
 	';
 
 	$headers = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-	$headers .= "From: Отправитель <noreply@di-di.ru>\r\n"; //Наименование и почта отправителя
+	$headers .= "From: Sender <noreply@test.ru>\r\n"; //Наименование и почта отправителя
 
 	mail('karamanskyi@gmail.com', $subject, $message, $headers);
+	// mail('sk@aqbe.ru', $subject, $message, $headers);
 
 }
 

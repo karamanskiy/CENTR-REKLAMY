@@ -53,6 +53,11 @@ $(function(){
 			var id = $(this).attr('id');
 			var data = $(this).serialize();
 
+			if($('input[name=data_obrab]').prop('checked') == false) {
+				alert('Пожалуйста, для отправки формы согласитесь на обработку персональных данных.');
+				return;
+			}
+
 			$.ajax({
 				url				: '/emailOrder.php',
 				data			: data,
@@ -76,7 +81,8 @@ $(function(){
 
 
 	// вызов всплывающего окна
-	$('.header__callback-btn').click(function() {$('#callback-modal').arcticmodal();});
+	$('.header__callback-btn').click(function(e) {e.preventDefault();$('#callback-modal').arcticmodal();});
+	$('.soglashenie').click(function(e) {e.preventDefault();$('#soglash-modal').arcticmodal();});
 
 	//инициализация слайдеров
 	$('.main-slider').slick({

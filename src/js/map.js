@@ -8,7 +8,7 @@
 			mapTypeControl: false,
 			zoomControl: true,
 			zoomControlOptions: {position: google.maps.ControlPosition.RIGHT_BOTTOM},
-			center: {lat: 55.649701, lng: 37.638710},
+			center: {lat: 55.892510, lng: 37.724269},
 			styles: [
 			{
 				"featureType": "all",
@@ -47,7 +47,7 @@
 
 		var mapElement = document.getElementById('main-map');
 		var map = new google.maps.Map(mapElement, mapOptions);
-		var loc = {lat: 55.649701, lng: 37.638710};
+		var loc = {lat: 55.892510, lng: 37.724269};
 		// 55.753462, 37.659005
 
 		var marker = new google.maps.Marker({
@@ -60,7 +60,7 @@
 		});
 
 		var infowindow = new google.maps.InfoWindow({
-				content: 'г. Москва, 1-Й переулок Котляковский, 3'
+				content: 'г. Мытищи, ул. Веры Волошиной, 9/24'
 			});
 
 		marker.addListener('click', function() {

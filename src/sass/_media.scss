@@ -356,6 +356,15 @@
 	.contacts__form {padding: 40px;}
 	.main-slider-dots {bottom: 80px;}
 
+	.contacts__form .wrap-check {
+		bottom: 40px;
+		left: 40px;
+	}
+	.contacts__form button {
+		bottom: 45px;
+		right: 40px;
+	}
+
 } //440
 
 
@@ -383,10 +392,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-} //390
 
-
-@media screen and (max-width: 370px) {
 	.contacts__form .wrap-check {
 		bottom: 15px;
 		left: 15px;
@@ -395,6 +401,11 @@
 		bottom: 20px;
 		right: 20px;
 	}
+} //387
+
+
+@media screen and (max-width: 370px) {
+
 } //370
 
 

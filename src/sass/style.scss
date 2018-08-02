@@ -748,14 +748,14 @@ body.padding-menu {padding-top: 97px;}
 		position: absolute;
 		top: 0;
 		left: 0;
-		min-height: 385px;
+		min-height: 280px;
 		width: 100%;
 		border: 2px solid #000;
 		background-color: #fff;
 		padding: 50px 60px;
 		transition: all .3s;
-		transform: translateX(-105%);
-		&.active {transform: translateX(0);}
+		transform: translate(-105%, 40px);
+		&.active {transform: translate(0, 40px);}
 		input::placeholder {color: #959595;}
 		input {
 			font-size: 12px;
@@ -870,6 +870,16 @@ body.padding-menu {padding-top: 97px;}
 }
 
 
+.soglashenie {
+	color: #077AF7 !important;
+	&:hover {text-decoration: underline;}
+}
+.soglash__wrap {
+	padding: 50px;
+	border: 2px solid #000;
+	background-color: #fff;
+	max-width: 800px;
+}
 .main-form {position: relative;}
 
 .arcticmodal-close {

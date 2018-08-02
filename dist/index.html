@@ -46,9 +46,9 @@
 				</ul>
 			</nav>
 			<div class="header__cont">
-				<a href="tel:+74951234565" class="header__cont-tel">+7 (495) 123 45 67</a>
+				<a href="tel:+74994551772" class="header__cont-tel">+7 499 455-17-72</a>
 				<div class="header__callback-btn">Заказать звонок</div>
-				<a href="mailto:mail@ccentrr.ru" class="header__cont-mail">mail@ccentrr.ru</a>
+				<a href="mailto:zakaz@reklama-myt.ru" class="header__cont-mail">zakaz@reklama-myt.ru</a>
 			</div>
 			<div class="header__hamb"><span></span></div>
 		</div>
@@ -469,14 +469,14 @@
 					<div class="contacts__data">
 						<div class="contacts__head">Телефон</div>
 						<div class="contacts__body">
-							<a href="tel:+74691234567">+7 469 123 45 67</a>
-							<a href="tel:+74691234567">+7 469 123 45 67</a>
+							<a href="tel:+74994551772">+7 499 455-17-72</a>
+							<!-- <a href="tel:+74691234567">+7 469 123 45 67</a> -->
 						</div>
 					</div>
 					<div class="contacts__data">
 						<div class="contacts__head">Почта</div>
 						<div class="contacts__body">
-							<a href="mailto:test@mail.ru">test@mail.ru</a>
+							<a href="mailto:zakaz@reklama-myt.ru">zakaz@reklama-myt.ru</a>
 						</div>
 					</div>
 					<div class="contacts__data contacts__forma-click">
@@ -488,13 +488,13 @@
 					<div class="contacts__data">
 						<div class="contacts__head">Адрес</div>
 						<div class="contacts__body">
-							<span>119049 г. Москва, ул. Донская, д. 8 стр. 1 <br>вторая строка для длинного адреса</span>
+							<span>Московская область, г. Мытищи, ул. Веры Волошиной, 9/24</span>
 						</div>
 					</div>
 					<div class="contacts__data">
 						<div class="contacts__head">Режим работы</div>
 						<div class="contacts__body">
-							<span>понедельник - пятница  с 10:00 до 21:00</span>
+							<span>понедельник - суббота  с 10:00 до 20:00</span>
 						</div>
 					</div>
 				</div>
@@ -502,15 +502,13 @@
 					<div class="contacts__head">Схема проезда</div>
 					<div id="main-map"></div>
 					<form class="contacts__form">
-						<input type="text" name="name1" placeholder="ИМЯ">
-						<input type="text" name="name2" placeholder="ФАМИЛИЯ">
-						<input type="tel" name="tel" placeholder="ТЕЛЕФОН">
+						<input type="text" name="name" placeholder="ИМЯ*" required>
+						<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required>
+						<input type="time" name="time" placeholder="УДОБНОЕ ВРЕМЯ ЗВОНКА">
 						<!-- ----- --> <br>
-						<input type="text" name="theme_letter" placeholder="ТЕМА ПИСЬМА">
-						<input type="text" name="mess" placeholder="СООБЩЕНИЕ">
 						<div class="wrap-check">
 							<input type="checkbox" name="data_obrab" id="data_obrab" value="Согласен/на на обработку данных">
-							<label for="data_obrab">я согласен на обработку <br>персональных данных</label>
+							<label for="data_obrab">я согласен <a href="#" class="soglashenie">на обработку</a> <br>персональных данных</label>
 						</div>
 						<button type="submit">Отправить</button>
 					</form>
@@ -528,9 +526,9 @@
 				<a href="#" target="_blank">Instagramm</a>
 			</div>
 			<div class="footer__cont">
-				<a href="tel:+74951234565" class="header__cont-tel">+7 (495) 123 45 67</a>
+				<a href="tel:+74994551772" class="header__cont-tel">+7 499 455-17-72</a>
 				<div class="header__callback-btn">Заказать звонок</div>
-				<a href="mailto:mail@ccentrr.ru" class="header__cont-mail">mail@ccentrr.ru</a>
+				<a href="mailto:zakaz@reklama-myt.ru" class="header__cont-mail">zakaz@reklama-myt.ru</a>
 			</div>
 		</div>
 	</footer>
@@ -544,15 +542,13 @@
 			<div class="main-form">
 				<div class="box-modal_close arcticmodal-close"></div>
 				<form class="contacts__form">
-					<input type="text" name="name1" placeholder="ИМЯ">
-					<input type="text" name="name2" placeholder="ФАМИЛИЯ">
-					<input type="tel" name="tel" placeholder="ТЕЛЕФОН">
+					<input type="text" name="name" placeholder="ИМЯ*" required>
+					<input type="tel" name="tel" placeholder="ТЕЛЕФОН*" required>
+					<input type="time" name="time" placeholder="Удобное время звонка">
 					<!-- ----- --> <br>
-					<input type="text" name="theme_letter" placeholder="ТЕМА ПИСЬМА">
-					<input type="text" name="mess" placeholder="СООБЩЕНИЕ">
 					<div class="wrap-check">
 						<input type="checkbox" name="data_obrab" id="data_obrab2" value="Согласен/на на обработку данных">
-						<label for="data_obrab2">я согласен на обработку <br>персональных данных</label>
+						<label for="data_obrab2">я согласен <a href="#" class="soglashenie">на обработку</a> <br>персональных данных</label>
 					</div>
 					<button type="submit">Отправить</button>
 				</form>
@@ -564,6 +560,17 @@
 				<div class="box-modal_close arcticmodal-close"></div>
 				<div class="success__wrap">
 					<p>Сообщение успешно отправлено!</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="soglash-modal">
+			<div class="main-form">
+				<div class="box-modal_close arcticmodal-close"></div>
+				<div class="soglash__wrap">
+					<h3>Соглашение на обработку персональных данных</h3>
+					<br>
+					<p>Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006 года Вы подтверждаете свое согласие на обработку компанией "Центр Рекламы" персональных данных: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу исключительно в целях продажи программного обеспечения на Ваше имя, как это описано ниже, блокирование, обезличивание, уничтожение. <br>Компания "Центр Рекламы" гарантирует конфиденциальность получаемой информации. Обработка персональных данных осуществляется в целях эффективного исполнения заказов, договоров и иных обязательств, принятых компанией "Центр Рекламы" в качестве обязательных к исполнению. <br>В случае необходимости предоставления Ваших персональных данных правообладателю, дистрибьютору или реселлеру программного обеспечения в целях регистрации программного обеспечения на ваше имя, вы даёте согласие на передачу ваших персональных данных. Компания "Центр Рекламы" гарантирует, что правообладатель, дистрибьютор или реселлер программного обеспечения осуществляет защиту персональных данных на условиях, аналогичных изложенным в Политике конфиденциальности персональных данных. <br>Настоящее согласие распространяется на следующие Ваши персональные данные: фамилия, имя и отчество, адрес электронной почты, почтовый адрес доставки заказов, контактный телефон, платёжные реквизиты. <br>Срок действия согласия является неограниченным. Вы можете в любой момент отозвать настоящее согласие, направив письменное уведомления на адрес: 119049 г. Москва, ул. Донская, д. 8 стр. 1  с пометкой «Отзыв согласия на обработку персональных данных». <br>Обращаем ваше внимание, что отзыв согласия на обработку персональных данных влечёт за собой удаление Вашей учётной записи с Интернет-сайта (http://центр-рекламы.рф), а также уничтожение записей, содержащих ваши персональные данные, в системах обработки персональных данных компании "Центр Рекламы", что может сделать невозможным пользование интернет-сервисами компании "Центр Рекламы". <br>Гарантирую, что представленная мной информация является полной, точной и достоверной, а также что при представлении информации не нарушаются действующее законодательство Российской Федерации, законные права и интересы третьих лиц. Вся представленная информация заполнена мною в отношении себя лично. <br>Настоящее согласие действует в течение всего периода хранения персональных данных, если иное не предусмотрено законодательством Российской Федерации.</p>
 				</div>
 			</div>
 		</div>
