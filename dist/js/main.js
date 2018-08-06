@@ -53,7 +53,7 @@ $(function(){
 			var id = $(this).attr('id');
 			var data = $(this).serialize();
 
-			if($('input[name=data_obrab]').prop('checked') == false) {
+			if($(this).find('input[name=data_obrab]').is(':checked') == false) {
 				alert('Пожалуйста, для отправки формы согласитесь на обработку персональных данных.');
 				return;
 			}
@@ -266,6 +266,9 @@ $(function(){
 	$('.contacts__forma-click').on('click', function () {
 		$(this).toggleClass('active');
 		$('.contacts__form').toggleClass('active');
+	});
+	$('.cform__close').on('click', function () {
+		$('.contacts__forma-click, .contacts__form').removeClass('active');
 	});
 
 	// скрытие placeholder

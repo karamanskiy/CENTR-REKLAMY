@@ -917,7 +917,8 @@ body.padding-menu {
 .main-form {
   position: relative; }
 
-.arcticmodal-close {
+.arcticmodal-close,
+.cform__close {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -930,7 +931,8 @@ body.padding-menu {
   cursor: pointer;
   -webkit-transition: all .3s;
   transition: all .3s; }
-  .arcticmodal-close:hover {
+  .arcticmodal-close:hover,
+  .cform__close:hover {
     opacity: .7; }
 
 .success__wrap {
@@ -1327,7 +1329,13 @@ body.padding-menu {
   .contacts__form {
     padding: 40px; }
   .main-slider-dots {
-    bottom: 80px; } }
+    bottom: 80px; }
+  .contacts__form .wrap-check {
+    bottom: 40px;
+    left: 40px; }
+  .contacts__form button {
+    bottom: 45px;
+    right: 40px; } }
 
 @media screen and (max-width: 387px) {
   .title {
@@ -1359,9 +1367,7 @@ body.padding-menu {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); } }
-
-@media screen and (max-width: 370px) {
+    transform: translate(-50%, -50%); }
   .contacts__form .wrap-check {
     bottom: 15px;
     left: 15px; }

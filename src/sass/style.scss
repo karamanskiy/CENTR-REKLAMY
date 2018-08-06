@@ -882,7 +882,8 @@ body.padding-menu {padding-top: 97px;}
 }
 .main-form {position: relative;}
 
-.arcticmodal-close {
+.arcticmodal-close,
+.cform__close {
 	position: absolute;
 	right: 15px;
 	top: 15px;
@@ -903,6 +904,10 @@ body.padding-menu {padding-top: 97px;}
 	background-color: #fff;
 	text-align: center;
 }
+
+
+
+
 
 
 

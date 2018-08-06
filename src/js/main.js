@@ -267,6 +267,9 @@ $(function(){
 		$(this).toggleClass('active');
 		$('.contacts__form').toggleClass('active');
 	});
+	$('.cform__close').on('click', function () {
+		$('.contacts__forma-click, .contacts__form').removeClass('active');
+	});
 
 	// скрытие placeholder
 	$('input').on('focus', function () {
